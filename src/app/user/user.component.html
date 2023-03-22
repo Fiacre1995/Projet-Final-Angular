@@ -1,0 +1,241 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+
+                <div class="col-12" style="height: 80px; background-color: rgb(225, 97, 97);">
+                    <nav class="navbar navbar-expand-lg navbar-red bg-red">
+                        <div class="container-fluid">
+                          
+                          
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <img src="../../assets/logo.avif" alt="" style="height: 60px; width: 60px; border-radius: 15rem;">
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-3" style="background-color: rgb(209, 204, 204); height: 700px;">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-red sidebar collapse">
+                                <div class="position-sticky pt-3">
+                                    <ul class="nav flex-column" style="margin-top: 10px;">
+                                        <div class="card card_i" style="width: 350px; margin-top: 20px;">
+                                            <div class="card-body">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" routerLink="/admin1">
+                                                        <span data-feather="home"></span>
+                                                        <i class="fa fa-home"></i>
+                                                        <b> Dashboard </b>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="card card_i" style="width: 350px; margin-top: 20px;">
+                                            <div class="card-body">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page"
+                                                        routerLink="/produits">
+                                                        <span data-feather="home"></span>
+                                                        <i class="fa fa-product-hunt"></i>
+                                                        <b> Produits </b>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="card card_i"
+                                            style="width: 350px; margin-top: 20px; ">
+                                            <div class="card-body">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page"
+                                                        routerLink="/ventes">
+                                                        <span data-feather="home"></span>
+                                                        <i class="fa fa-product-hunt"></i>
+                                                        <b> Ventes </b>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="card card_i" style="width: 350px; margin-top: 20px;">
+                                            <div class="card-body">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page"
+                                                        routerLink="/factures">
+                                                        <span data-feather="home"></span>
+                                                        <i class="fa fa-file"></i>
+                                                        <b> Factures </b>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="card card_i"
+                                            style="width: 350px; margin-top: 20px; ">
+                                            <div class="card-body">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page"
+                                                        routerLink="/fournisseur">
+                                                        <span data-feather="home"></span>
+                                                        <i class="fa fa-truck"></i>
+                                                        <b> Fournisseurs </b>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="card card_i" style="width: 350px; margin-top: 20px;">
+                                            <div class="card-body">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page"
+                                                        routerLink="/clients">
+                                                        <span data-feather="home"></span>
+                                                        <i class="fa fa-users"></i>
+                                                        <b> Clients </b>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="card card_i" style="width: 350px; margin-top: 20px; background-color: rgb(225, 97, 97);">
+                                            <div class="card-body">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" routerLink="/user">
+                                                        <span data-feather="home"></span>
+                                                        <i class="fa fa-user"></i>
+                                                        <b> Utilisateur </b>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+
+
+                                    </ul>
+
+                                </div>
+                            </nav>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8">
+
+                    <div class="row">
+                        <div
+                            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2"> <b> UTILISATEURS </b> </h1>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+<div class="col-12">
+    <div class="card" style="width: 600px; height: 400px; margin-left: 50px;">
+        <h1 style="margin-bottom: 20px; text-align: center;"> <u> Nouvel Enregistrement </u>
+        </h1>
+        <div class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4" style="margin-left: 50px; width: 220px;">
+                <div class="form-outline">
+                    <input type="text" class="form-control" id="validationDefault01"  value=""
+                           required [(ngModel)]="nom"/>
+                    <label for="validationDefault01" class="form-label">Nom Utilisateur</label>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-left: 50px;">
+                <div class="form-outline">
+                    <input type="text" class="form-control" id="validationDefault02" value=""
+                           required [(ngModel)]="prenoms"/>
+                    <label for="validationDefault02" class="form-label">Prenoms
+                        Utilisateur</label>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-left: 50px;">
+                <div class="form-outline">
+                    <input type="text" class="form-control" id="validationDefault02" value=""
+                           required [(ngModel)]="email"/>
+                    <label for="validationDefault02" class="form-label">email
+                        Utilisateur</label>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-left: 50px; width: 220px;">
+                <div class="form-outline">
+                    <input type="password" class="form-control" id="validationDefault01" value=""
+                           required [(ngModel)]="password"/>
+                    <label for="validationDefault01" class="form-label">Mot de Passe
+                        Utilisateur</label>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-left: 50px; width: 100px;">
+                <select class="form-select" aria-label="Default select example" [(ngModel)]="genre">
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+                <label for="validationDefault01" class="form-label">Genre </label>
+            </div>
+            <div class="col-md-4" style="margin-left: 50px; width: 100px;">
+                <select class="form-select" aria-label="Default select example" [(ngModel)]="role">
+                    <option value="admin">Administrateur</option>
+                    <option value="caiss">Caissier</option>
+                </select>
+                <label for="validationDefault01" class="form-label">Role </label>
+            </div>
+
+            <div class="col-12" style="margin-left: 200px;">
+                <button type="button" (click)="submit()" class="btn btn-primary">Ajouter</button>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <h1 style="text-align: center; margin-bottom: 50px;"> <u> Liste des Utilisateurs </u> </h1>
+
+                        <table class="table align-middle mb-0 bg-white">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nom </th>
+                                    <th>Prenoms</th>
+                                    <th>Email</th>
+                                    <th>Mot de Passe</th>
+                                    <th>Sexe</th>
+                                    <th>Role</th>
+                                    <th>Date Creation</th>
+                                    <th>Date Modification</th>
+                                    <th>Suppression</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let u of user1">
+                                    <td> {{ u.id_user }} </td>
+                                    <td> {{ u.lastname_user }} </td>
+                                    <td> {{ u.firstname_user }} </td>
+                                    <td> {{ u.email_user }} </td>
+                                    <td> {{ u.password_user }} </td>
+                                    <td> {{ u.sex_user }} </td>
+                                    <td> {{ u.role_user }} </td>
+                                    <td> {{ u.created_at }}</td>
+                                    <td> {{ u.updated_at }}</td>
+                                    <th scope="col"><button type="button" (click)="Delete(u.id_user)" class="btn btn-danger">Supprimer</button></th>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

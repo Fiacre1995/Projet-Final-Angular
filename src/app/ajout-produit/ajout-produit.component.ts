@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-import { ProduitService } from './Services/produit.service';
-
+import { ProduitService } from '../Services/produit.service';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-ajout-produit',
+  templateUrl: './ajout-produit.component.html',
+  styleUrls: ['./ajout-produit.component.css']
 })
-export class AppComponent {
-  title = 'essai1';
+export class AjoutProduitComponent {
+
   libelle = "";
   prix = 0;
-
   produit: any = [];
 
   constructor(private Httpservice: ProduitService) {
@@ -19,13 +17,16 @@ export class AppComponent {
 
   submit() {
     this.Httpservice.Post({lib_prod:this.libelle,prix_prod:this.prix})
+    window.location.reload();
   }
 
   Get() {
     this.Httpservice.Get().subscribe(response=>this.produit=response)
   }
 
-  
+  Delete(Data:any) {
+    
+    window.location.reload();
+  }
+
 }
-
-

@@ -1,0 +1,32 @@
+<input class="form-control" [(ngModel)]="libelle" type="text" placeholder="Libelle produit" aria-label="default input example">
+<input class="form-control  form-control-sm" [(ngModel)]="prix" type="text" placeholder="Prix produit" aria-label=".form-control-sm example">
+<button type="button" (click)="submit()" class="btn btn-primary">Primary</button>
+
+<br>
+
+<div style="margin-top: 50px;">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">libelle produit</th>
+        <th scope="col">prix produit</th>
+        <th scope="col">date enregistrement</th>
+        <th scope="col">date modification</th>
+        <th scope="col">Modification</th>
+        <th scope="col">Suppression</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of produit">
+        <th scope="row">{{ p.id_prod }}</th>
+        <td>{{ p.lib_prod }}</td>
+        <td>{{ p.prix_prod }}</td>
+        <td>{{ p.createdAt }}</td>
+        <td>{{ p.updatedAt }} </td>
+        <td><button type="button " class="btn btn-success btn-sm" [routerLink]="'update_produit/'+p.id_prod" >Modifier</button></td>
+        <td><button type="button" class="btn btn-danger btn-sm" [routerLink]="'../admin1/'">Supprimer</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

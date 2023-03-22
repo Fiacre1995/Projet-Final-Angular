@@ -1,0 +1,28 @@
+#body{
+    width: 1300px;
+}
+#nav-bar{
+    background-color: rgb(225, 97, 97);
+    height: 80px;
+    width: 1550px;
+}
+
+#card{
+    margin-top: 150px;
+    width: 500px;
+    height: 350px;
+    justify-content: center;
+    position: relative;
+    margin-left: 50px;
+    background-color: rgb(225, 97, 97);;
+}
+
+img{
+    background-size: cover;
+    height: 700px;
+    width: 900px;
+}
+
+input {
+    width: 20px;
+}
